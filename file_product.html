@@ -60,6 +60,7 @@
                 >
               </div>
 
+
               <div>
                 <h1 class="text-2xl font-medium poppins text-[#30373D]">
                   <span>Upload Image</span>
@@ -69,48 +70,39 @@
                 <hr class="border border-[#A946E7] my-[34px]" />
 
                 <div>
-                  <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-[14px]">
-                    <h1 class="text-xl font-normal poppins text-[#30373D]">Add Images</h1>
-                    <p class="text-lg font-normal poppins text-[#8C91A2]">Dimension 1080 x 1080 Min 2MB</p>
+
+                    <div>
+                        <label for="" class="text-xl font-normal poppins">Add A Link</label>
+                        <input type="text" class="w-full h-[47px] border border-[#571183] rounded-[8px] mt-3">
+                    </div>
+                  <div class="mt-7 flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-[14px]">
+                    <p class="text-lg font-normal poppins text-[#30373D]">Product Files (Files must be in ZIP/PDF/IMAGES)Max 1GB</p>
                   </div>
-                  <label for="image1" class="mb-10 cursor-pointer border-2 border-[#571183] rounded-[5px] w-full h-[215px] block">
+                  <label for="image1" class="mb-10 cursor-pointer border border-[#571183] rounded-[5px] w-full h-[215px] block">
                       <div class=" flex flex-col justify-center items-center h-full">
-                        <img src="../Add_Image.png" alt="add">
-                        <p>Click or Drop Image</p>
+                        <img src="./Medical File 01.png" alt="add">
+                        <p>Click or Drop Files</p>
                       </div>
                   </label>
                   <input type="file" id="image1" class="hidden">
 
-                  <div>
-                    <h1>Preview</h1>
-
-                   <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 items-center justify-between xl:gap-8 lg:gap-6 sm:gap-4 gap-3 mt-2">
-                    <div class="border border-[#571183] w-full h-[142px]">
-                        <img src="./book.png" alt="Image1.jpg" class="w-full h-full">
-                    </div>
-                    <div class="border border-[#571183] w-full h-[142px]">
-                        <img src="./book.png" alt="Image1.jpg" class="w-full h-full">
-                    </div>
-                    <div class="border border-[#571183] w-full h-[142px]">
-                        <img src="./book.png" alt="Image1.jpg" class="w-full h-full">
-                    </div>
-                    <div class="border border-[#571183] w-full h-[142px]">
-                        <img src="./book.png" alt="Image1.jpg" class="w-full h-full">
-                    </div>
-                   </div>
-                  </div>
-
-                  <div class="mt-10">
-                    <h1 class="text-xl font-normal poppins text-[#30373D] mb-2">Uploade Video</h1>
-                    <label for="video1" class="mb-10 cursor-pointer border-2 border-[#571183] rounded-[5px] w-full sm:w-[300px]  h-[160px] block">
-                        <div class=" flex flex-col justify-center items-center h-full">
-                            <img src="./ri_video-fill.png" alt="add">
-                            <p>Click or Drop Video</p>
+                  <div class="flex flex-row items-center gap-5">
+                    <img src="./File Format Icons [1.0].png" alt="" class="w-[38px] h-[38px]">
+                    <div>
+                        <div class="text-base font-normal poppins">file_1.pdf</div>
+                        <div class="flex items-center mt-1 gap-2">
+                            <p>120 KB .</p>
+                            <div class="flex items-center  gap-1">
+                                <i class="fa-solid fa-check text-white p-1 text-[8px] rounded-full bg-[#1FC16B]"></i>
+                                <span>Completed</span>
+                            </div>
                         </div>
-                    </label>
-                    <input type="file" id="video1" class="hidden">
-                    <p class="text-[12px] font-normal poppins w-[300px]">Upload a video and keep it under 25MB and less than 75 seconds. Allowed extension: .mp4</p>
+                    </div>
+                  <div class="py-2 px-[14px] rounded-full bg-[#D9D9D940]">
+                    <i class="fa-solid fa-trash-can text-[#CD1B1B] text-lg"></i>
                   </div>
+                  </div>
+
                 </div>
               </div>
             </div>
