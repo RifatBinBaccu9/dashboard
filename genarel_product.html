@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="max-w-[1920px] mx-auto flex">
+      <!-- Site bar -->
+      <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
+        <h1>Site bar</h1>
+      </div>
+
+      <!-- Main -->
+      <div class="w-full ">
+        <div class=" h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
+          <h1>Header</h1>
+        </div>
+
+       <div class="pl-4 pr-[38px]">
+        <h1 class="text-2xl font-medium poppins text-[#333333] mb-3">Add New Product</h1>
+
+        <div class="grid grid-cols-3 gap-10">
+            <!-- Left -->
+            <div class="col-span-2">
+               <div class="flex flex-row items-center gap-6  mb-5">
+                <span class="text-2xl font-normal poppins pb-5 border-b-2 text-[#941DDC] border-b-[#941DDC]">General</span>
+                <span class="text-2xl font-normal poppins pb-5 ">Image</span>
+                <span class="text-2xl font-normal poppins pb-5 ">File</span>
+               </div>
+
+               <div class="flex flex-col gap-8">
+                <div class="flex flex-col">
+                    <label for="" class="text-base font-medium poppins text-[#202020]">Product Name</label>
+                    <input type="text" placeholder="Type your product name" class="text-lg font-normal inter text-[#898989] p-[18px] border border-[#DCDCDC] rounded-[10px] mt-3 w-full">
+                </div>
+
+                <div class="flex flex-col">
+                    <label for="" class="text-base font-medium poppins text-[#202020]">Product Description</label>
+                    <input type="text" placeholder="Type your product name" class="text-lg font-normal inter text-[#898989] p-[18px] border border-[#DCDCDC] rounded-[10px] mt-3 w-full">
+                </div>
+               </div>
+            </div>
+
+            <!-- Right -->
+            <div class="border border-[#D5A5F3] bg-[#F5E8FC6B] rounded-[18px] p-7">
+              <div>
+                <img src="../book.png" alt="book" class="w-full h-[361px]">
+              </div>
+              <div>
+                <h1 class="text-[28px] font-semibold poppins my-3 text-[#333333]">Christy The ReindeerChristy The Reindeer.</h1>
+                <div class="flex flex-row justify-between items-center">
+                    <span class="text-xl font-normal poppins text-[#333333]">By Ryven</span>
+                    <div>
+                        <span class="text-[28px] font-semibold poppins text-[#0F0317]">$199</span>
+                        <span class="text-[#0F0317] text-xl font-normal poppins line-through">$250</span>
+                    </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-3">
+
+              <div class="text-end">
+                <button class="text-2xl py-[18px] px-[26px] bg-[#941DDC] text-white rounded-[5px] font-normal poppins ">Buy now</button>
+              </div>
+              </div>
+            </div>
+        </div>
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
