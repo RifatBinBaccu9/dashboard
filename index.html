@@ -25,6 +25,81 @@
     />
   </head>
   <body>
-    <p class="text-5xl">Hello</p>
+    <div class="max-w-[1920px] mx-auto flex">
+      <!-- Site bar -->
+      <div class="w-[320px] h-[1292px] bg-amber-400">
+        <h1>Site bar</h1>
+      </div>
+
+      <!-- Main -->
+      <div>
+        <div class="h-[74px] w-[1600px] bg-green-400 mt-8 mb-[56px]">
+          <h1>Header</h1>
+        </div>
+
+        <div class="px-4">
+            <!-- Product card header -->
+          <div class="flex flex-row justify-between items-center">
+            <div class="flex flex-row items-center gap-2">
+              <h1 class="text-[23px] font-semibold poppins">All Products</h1>
+              <p class="text-[12px] font-normal poppins text-[#A946E7]">Total(12)</p>
+            </div>
+
+            <div class="flex flex-row gap-4">
+              <div class="flex flex-row gap-3 py-4 px-8 items-center">
+                <h1 class="text-[13px] font-semibold poppins">Filter</h1>
+                <i class="fa-solid fa-arrow-up-wide-short text-2xl"></i>
+              </div>
+
+              <button class="text-white bg-[#941DDC] py-4 px-8 flex flex-row items-center gap-4 rounded-[5px]">
+                <span class="text-[13px] font-semibold poppins">Add new product</span>
+                <i class="fa-solid fa-circle-plus text-2xl"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Product Card section -->
+          <div>
+            <div class="flex flex-row gap-5 items-center">
+                <div class="w-[184px] h-[180px]">
+                    <img src="../book.png" alt="book" class="w-full h-full">
+                </div>
+                <div>
+                    <div>
+                        <h1 class="text-2xl font-medium poppins">I Want a c Catastrophe</h1>
+                        <span class="text-[12px] font-normal inter text-[#941DDC]">Affiliated</span>
+                    </div>
+
+                    <div>
+                        <h1>$200.00</h1>
+                        <div>
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.5(12)</span>
+                        </div>
+                        <p>Active</p>
+                    </div>
+
+                    <div>
+                        <span>Affilate Link</span>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+
+                    <div>
+                        <div>
+                            <span>$100 Revenue</span>
+                            <span>83 Sales</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-copy"></i>
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
