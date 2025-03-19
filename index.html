@@ -27,76 +27,1084 @@
   <body>
     <div class="max-w-[1920px] mx-auto flex">
       <!-- Site bar -->
-      <div class="w-[320px] h-[1292px] bg-amber-400">
+      <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
         <h1>Site bar</h1>
       </div>
 
       <!-- Main -->
-      <div>
-        <div class="h-[74px] w-[1600px] bg-green-400 mt-8 mb-[56px]">
+      <div class="w-full">
+        <div class=" h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
           <h1>Header</h1>
         </div>
 
-        <div class="px-4">
-            <!-- Product card header -->
-          <div class="flex flex-row justify-between items-center">
+        <div class="px-4 w-full">
+          <!-- Product card header -->
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
             <div class="flex flex-row items-center gap-2">
-              <h1 class="text-[23px] font-semibold poppins">All Products</h1>
-              <p class="text-[12px] font-normal poppins text-[#A946E7]">Total(12)</p>
+              <h1 class="text-lg md:text-[23px] font-semibold poppins">All Products</h1>
+              <p class="text-[12px] font-normal poppins text-[#A946E7]">
+                Total(12)
+              </p>
             </div>
 
-            <div class="flex flex-row gap-4">
-              <div class="flex flex-row gap-3 py-4 px-8 items-center">
+            <div class="flex flex-row justify-between sm:justify-end gap-4 mt-4 sm:mt-0">
+              <div class="flex flex-row gap-3 py-2 md:py-4 px-4 md:px-8 items-center">
                 <h1 class="text-[13px] font-semibold poppins">Filter</h1>
-                <i class="fa-solid fa-arrow-up-wide-short text-2xl"></i>
+                <i class="fa-solid fa-arrow-up-wide-short text-lg md:text-2xl"></i>
               </div>
 
-              <button class="text-white bg-[#941DDC] py-4 px-8 flex flex-row items-center gap-4 rounded-[5px]">
-                <span class="text-[13px] font-semibold poppins">Add new product</span>
-                <i class="fa-solid fa-circle-plus text-2xl"></i>
+              <button
+                class="text-white bg-[#941DDC] py-2 md:py-4 px-4 md:px-8 flex flex-row items-center gap-4 rounded-[5px]"
+              >
+                <span class="text-[13px] font-semibold poppins"
+                  >Add new product</span
+                >
+                <i class="fa-solid fa-circle-plus text-lg md:text-2xl"></i>
               </button>
             </div>
           </div>
 
           <!-- Product Card section -->
-          <div>
-            <div class="flex flex-row gap-5 items-center">
-                <div class="w-[184px] h-[180px]">
-                    <img src="../book.png" alt="book" class="w-full h-full">
+          <div class="grid xl:grid-cols-2 gap-7 mt-[26px]">
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
                 </div>
-                <div>
-                    <div>
-                        <h1 class="text-2xl font-medium poppins">I Want a c Catastrophe</h1>
-                        <span class="text-[12px] font-normal inter text-[#941DDC]">Affiliated</span>
-                    </div>
 
-                    <div>
-                        <h1>$200.00</h1>
-                        <div>
-                            <i class="fa-solid fa-star"></i>
-                            <span>4.5(12)</span>
-                        </div>
-                        <p>Active</p>
-                    </div>
-
-                    <div>
-                        <span>Affilate Link</span>
-                        <i class="fa-solid fa-copy"></i>
-                    </div>
-
-                    <div>
-                        <div>
-                            <span>$100 Revenue</span>
-                            <span>83 Sales</span>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-copy"></i>
-                            <i class="fa-solid fa-pen-to-square"></i>
-                            <i class="fa-solid fa-trash"></i>
-                        </div>
-                    </div>
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
                 </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-5 items-center w-full p-[14px] border border-[#A946E733] rounded-[12px]">
+              <div class="w-[184px] h-[120px] sm:h-[180px]">
+                <img src="../book.png" alt="book" class="w-full h-full" />
+              </div>
+              <div class="w-full">
+                <div class="flex flex-row justify-between gap-6 items-center">
+                  <h1 class="text-base sm:text-2xl font-medium poppins">
+                    I Want a c Catastrophe
+                  </h1>
+                  <span
+                    class="text-[12px] font-normal inter text-[#941DDC] bg-[#941DDC1A] rounded-[56px] py-1 px-2"
+                    >Affiliated</span
+                  >
+                </div>
+
+                <div class="flex flex-row items-center gap-5 mt-1 mb-4">
+                  <h1 class="text-base font-semibold poppins text-[#333333]">
+                    $200.00
+                  </h1>
+                  <div class="flex flex-row items-center gap-2 bg-[#F6F6F6] rounded-[6px] p-1">
+                    <i class="fa-solid fa-star text-[15px] text-[#F8B84E]"></i>
+                    <span class="text-[13px] font-medium poppins text-[#333333]"
+                      >4.5(12)</span
+                    >
+                  </div>
+                  <p
+                    class="text-[13px] font-semibold poppins text-[#45EF48] bg-[#45EF4833] rounded-[99px] py-1 px-2"
+                  >
+                    Active
+                  </p>
+                </div>
+
+                <div class="flex flex-row items-center gap-1 text-[#941DDC]">
+                  <span class="text-[12px] font-normal inter"
+                    >Affilate Link</span
+                  >
+                  <i class="fa-solid fa-copy text-[8px]"></i>
+                </div>
+
+                <div class="flex flex-row gap-1 items-center mt-7">
+                    <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-eye text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1950</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >1.2K</span
+                        >
+                      </div>
+                      <div class="flex flex-row items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-3">
+                        <span class="text-[13px] font-medium poppins text-[#333333]"
+                          >E book</span
+                        >
+                      </div>
+                </div>
+                <div class="flex flex-col sm:flex-row justify-between items-center gap-6 w-full mt-3 sm:mt-1">
+                  <div
+                    class="text-base text-[#333333] poppins font-normal flex flex-row items-center gap-2"
+                  >
+                    <span>$100 Revenue</span>
+                    <span>83 Sales</span>
+                  </div>
+                  <div class="flex flex-row gap-3 items-center">
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-copy w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-pen-to-square w-[14px] h-[18px] text-[#333333]"
+                      ></i>
+                    </div>
+                    <div class="bg-[#F3F3F3] py-2 px-[10px] rounded-full">
+                      <i
+                        class="fa-solid fa-trash w-[14px] h-[18px] text-[#F56A6A]"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex flex-row sm:justify-center items-center w-full gap-5 mt-5 md:mt-10 mb-10 md:mb-[80px]">
+            <div class=" border border-[#858585] rounded-[3px] flex flex-row gap-1 items-center py-[1px] sm:py-[6px] px-2 sm:px-[14px]">
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                <span class="text-base font-medium poppins text-[#000000B2]">Preview</span>
+            </div>
+            <div class="flex flex-row gap-5">
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">1</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">2</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">3</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">4</span>
+            </div>
+           <div class=" border border-[#858585] rounded-[3px] flex flex-row gap-1 items-center py-[1px] sm:py-[6px] px-2 sm:px-[14px]">
+            <span class="text-base font-medium poppins text-[#000000B2]">Next</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+           </div>
           </div>
         </div>
       </div>
