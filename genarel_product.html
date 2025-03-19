@@ -3,89 +3,257 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Add Product</title>
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind cnfig -->
+    <!-- Tailwind Config -->
     <link rel="stylesheet" href="./src/input.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- font-awesome -->
+    <!-- FontAwesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
+    <!-- Quill -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet" />
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
   </head>
   <body>
     <div class="max-w-[1920px] mx-auto flex">
-      <!-- Site bar -->
+      <!-- Sidebar -->
       <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
-        <h1>Site bar</h1>
+        <h1>Sidebar</h1>
       </div>
 
-      <!-- Main -->
-      <div class="w-full ">
-        <div class=" h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
+      <!-- Main Content -->
+      <div class="w-full">
+        <div class="h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
           <h1>Header</h1>
         </div>
 
-       <div class="pl-4 pr-[38px]">
-        <h1 class="text-2xl font-medium poppins text-[#333333] mb-3">Add New Product</h1>
+        <div class="px-3 xl:px-0 xl:pl-4 xl:pr-[38px]">
+          <h1 class="lg:text-2xl sm:text-xl text-lg  font-medium poppins text-[#333] mb-3">Add New Product</h1>
 
-        <div class="grid grid-cols-3 gap-10">
-            <!-- Left -->
-            <div class="col-span-2">
-               <div class="flex flex-row items-center gap-6  mb-5">
-                <span class="text-2xl font-normal poppins pb-5 border-b-2 text-[#941DDC] border-b-[#941DDC]">General</span>
-                <span class="text-2xl font-normal poppins pb-5 ">Image</span>
-                <span class="text-2xl font-normal poppins pb-5 ">File</span>
-               </div>
-
-               <div class="flex flex-col gap-8">
-                <div class="flex flex-col">
-                    <label for="" class="text-base font-medium poppins text-[#202020]">Product Name</label>
-                    <input type="text" placeholder="Type your product name" class="text-lg font-normal inter text-[#898989] p-[18px] border border-[#DCDCDC] rounded-[10px] mt-3 w-full">
-                </div>
-
-                <div class="flex flex-col">
-                    <label for="" class="text-base font-medium poppins text-[#202020]">Product Description</label>
-                    <input type="text" placeholder="Type your product name" class="text-lg font-normal inter text-[#898989] p-[18px] border border-[#DCDCDC] rounded-[10px] mt-3 w-full">
-                </div>
-               </div>
-            </div>
-
-            <!-- Right -->
-            <div class="border border-[#D5A5F3] bg-[#F5E8FC6B] rounded-[18px] p-7">
-              <div>
-                <img src="../book.png" alt="book" class="w-full h-[361px]">
+          <div class="grid xl:grid-cols-3 gap-10">
+            <!-- Left Section -->
+            <div class="xl:col-span-2">
+              <div class="flex flex-row items-center gap-6 mb-5">
+                <span class="xl:text-2xl lg:text-xl sm:text-lg text-base font-normal pb-5 border-b-2 text-[#941DDC] border-b-[#941DDC]">General</span>
+                <span class="xl:text-2xl lg:text-xl sm:text-lg text-base font-normal pb-5">Image</span>
+                <span class="xl:text-2xl lg:text-xl sm:text-lg text-base font-normal pb-5">File</span>
               </div>
-              <div>
-                <h1 class="text-[28px] font-semibold poppins my-3 text-[#333333]">Christy The ReindeerChristy The Reindeer.</h1>
-                <div class="flex flex-row justify-between items-center">
-                    <span class="text-xl font-normal poppins text-[#333333]">By Ryven</span>
+
+              <div class="flex flex-col gap-8">
+                <!-- Product Name -->
+                <div class="flex flex-col">
+                  <label class="text-base font-medium poppins text-[#202020]">Product Name</label>
+                  <input
+                    type="text"
+                    placeholder="Type your product name"
+                    class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                  />
+                </div>
+
+                <!-- Product Description -->
+                <div class="flex flex-col">
+                  <label class="text-base font-medium poppins text-[#202020]">Product Description</label>
+                  <div class="w-full h-[236px] mt-[14px] rounded-2xl">
+                    <div id="editor-container" class="bg-white p-4 text-lg font-normal text-[#898989]">Describe your product...</div>
+                  </div>
+                </div>
+
+                <!-- Product Category -->
+                <div class="flex flex-col mt-14 sm:mt-8">
+                  <label class="text-base font-medium poppins text-[#202020]">Category</label>
+                  <div class="flex flex-col sm:flex-row gap-7 mt-3 ">
+                   <div class="w-full">
+                    <select class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] w-full">
+                      <option value="1">Select Category</option>
+                      <option value="2">Electronics</option>
+                      <option value="3">Clothing</option>
+                      <option value="4">Accessories</option>
+                    </select>
+                   </div>
                     <div>
-                        <span class="text-[28px] font-semibold poppins text-[#0F0317]">$199</span>
-                        <span class="text-[#0F0317] text-xl font-normal poppins line-through">$250</span>
+                      <button class="xl:text-lg sm:text-base text-sm  xl:p-[18px] lg:p-[14px] p-3 w-[93px]  font-medium text-[#A946E7] border border-[#A946E7] rounded-[9px]">+ New</button>
                     </div>
+                  </div>
                 </div>
-                <hr class="border border-[#EAD2F9] my-3">
 
-              <div class="text-end">
-                <button class="text-2xl py-[18px] px-[26px] bg-[#941DDC] text-white rounded-[5px] font-normal poppins ">Buy now</button>
+                <div class="grid sm:grid-cols-4 gap-6 my-0 sm:my-7">
+                  <div class="sm:col-span-2 flex flex-col">
+                    <label
+                      for=""
+                      class="text-base font-medium poppins text-[#202020]"
+                      >License Type</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                    >
+                      <option value="1">Single Use</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col">
+                    <label
+                      for=""
+                      class="text-base font-medium poppins text-[#202020]"
+                      >Add for Affiliate</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                    >
+                      <option value="1">On</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                    </select>
+                  </div>
+                  <div class="flex flex-col">
+                    <label
+                      for=""
+                      class="text-base font-medium poppins text-[#202020]"
+                      >Profit Share</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="10%"
+                      class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid sm:grid-cols-4 gap-6">
+                  <div class="sm:col-span-2 flex flex-col">
+                    <label
+                      for=""
+                      class="text-base font-medium poppins text-[#202020]"
+                      >Price Type</label
+                    >
+                    <select
+                      name=""
+                      id=""
+                      class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                    >
+                      <option value="1">Pay what they want</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                    </select>
+                  </div>
+
+                  <div class="flex flex-col">
+                    <label
+                      for=""
+                      class="text-base font-medium poppins text-[#202020]"
+                      >Minimum Price</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="$10"
+                      class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <label
+                      for=""
+                      class="text-base font-medium poppins text-[#202020]"
+                      >Suggested Price</label
+                    >
+                    <input
+                      type="text"
+                      placeholder="$20"
+                      class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full"
+                    />
+                  </div>
+                </div>
+
+                <!-- SEO Title -->
+                <div class="flex flex-col">
+                  <label class="text-base font-medium poppins text-[#202020]">SEO Title</label>
+                  <input type="text" placeholder="Type SEO title" class="xl:text-lg sm:text-base text-sm font-normal text-[#898989] xl:p-[18px] lg:p-[14px] sm:p-[12px] p-3 border border-[#DCDCDC] rounded-[10px] mt-3 w-full" />
+                </div>
+
+                <!-- SEO Description -->
+                <div class="flex flex-col">
+                  <label class="text-base font-medium poppins text-[#202020]">SEO Description</label>
+                  <div class="w-full h-[236px] mt-[14px] rounded-2xl">
+                    <div id="editor-container-seo" class="bg-white p-4 text-lg font-normal text-[#898989]">Describe your product...</div>
+                  </div>
+                </div>
+
+                 <!-- seo tag -->
+                 <div class="flex flex-col mt-14 sm:mt-10">
+                  <label class="text-base font-medium poppins text-[#202020]">SEO Title</label>
+                  <div class=" text-center flex flex-col sm:flex-row sm:items-center gap-3 text-lg font-normal text-[#898989] p-2 border border-[#DCDCDC] rounded-[10px] mt-3 w-full" >
+                    <button class="justify-center flex flex-row items-center gap-2 text-base font-medium poppins text-white xl:px-[60px] sm:px-10 xl:py-3 py-2  rounded-[8px] bg-[#941DDC]"><span>E-Book</span><i class="fa-solid fa-plus"></i></button>
+                    <button class="justify-center flex flex-row items-center gap-2 text-base font-medium poppins text-white xl:px-[60px] sm:px-10 xl:py-3 py-2 rounded-[8px] bg-[#941DDC]"><span>Digital Product</span><i class="fa-solid fa-plus"></i></button>
+                  </div>
+                </div>
+
               </div>
+
+            </div>
+            
+
+            <!-- Right Section -->
+            <div class="max-h-[686px] border border-[#D5A5F3] bg-[#F5E8FC6B] rounded-[18px] p-7">
+              <div>
+                <img src="../book.png" alt="book" class="w-full h-[250px] sm:h-[361px]" />
+              </div>
+              <div>
+                <h1 class="xl:text-[28px] lg:text-2xl sm:text-xl text-lg font-semibold poppins my-3 text-[#333]">Christy The Reindeer</h1>
+                <div class="flex flex-row justify-between items-center">
+                  <span class="xl:text-xl lg:text-lg sm:text-base text-sm font-normal poppins text-[#333]">By Ryven</span>
+                  <div>
+                    <span class="xl:text-[28px] lg:text-2xl sm:text-xl text-lg font-semibold poppins text-[#0F0317]">$199</span>
+                    <span class="text-[#0F0317] xl:text-xl lg:text-lg sm:text-base text-sm font-normal poppins line-through">$250</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-3" />
+                <div class="text-end">
+                  <button class="xl:text-2xl lg:text-xl sm:text-lg text-base xl:py-[18px] lg:py-[14px] sm:py-3 py-2  px-[26px] bg-[#941DDC] text-white rounded-[5px] font-normal poppins">Buy now</button>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="mt-10 flex flex-col sm:flex-row justify-between items-center gap-6 mb-[68px]">
+            <div class="flex flex-row items-center gap-3 text-[#8C91A2]">
+              <i class="fa-solid fa-check"></i>
+              <span>Jul 3, 2022 at 3:54 PM</span>
+            </div>
+            <button class="text-base font-medium poppins text-white px-[60px] sm:py-3 py-2 rounded-[8px] bg-[#941DDC]">Continue</button>
+          </div>
         </div>
-       </div>
-      </div>
+      </div> 
     </div>
+
+    <!-- Quill Initialization -->
+    <script>
+      new Quill("#editor-container", { theme: "snow" });
+      new Quill("#editor-container-seo", { theme: "snow" });
+    </script>
   </body>
 </html>

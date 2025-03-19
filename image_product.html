@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Config -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="max-w-[1920px] mx-auto flex">
+      <!-- Sidebar -->
+      <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
+        <h1>Sidebar</h1>
+      </div>
+
+      <!-- Main Content -->
+      <div class="w-full">
+        <div class="h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
+          <h1>Header</h1>
+        </div>
+
+        <div class="px-3 xl:px-0 xl:pl-4 xl:pr-[38px]">
+          <h1
+            class="lg:text-2xl sm:text-xl text-lg font-medium poppins text-[#333] mb-3"
+          >
+            Add New Product
+          </h1>
+
+          <div class="grid xl:grid-cols-3 gap-10">
+            <!-- Left Section -->
+            <div class="xl:col-span-2">
+              <div class="flex flex-row items-center gap-6 mb-5">
+                <span
+                  class="xl:text-2xl lg:text-xl sm:text-lg text-base font-normal pb-5 border-b-2 text-[#941DDC] border-b-[#941DDC]"
+                  >General</span
+                >
+                <span
+                  class="xl:text-2xl lg:text-xl sm:text-lg text-base font-normal pb-5"
+                  >Image</span
+                >
+                <span
+                  class="xl:text-2xl lg:text-xl sm:text-lg text-base font-normal pb-5"
+                  >File</span
+                >
+              </div>
+
+              <div>
+                <h1>
+                  <span>Upload Image</span>
+                  <i class="fas fa-info-circle info-icon"></i>
+                </h1>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div
+              class="max-h-[686px] border border-[#D5A5F3] bg-[#F5E8FC6B] rounded-[18px] p-7"
+            >
+              <div>
+                <img
+                  src="../book.png"
+                  alt="book"
+                  class="w-full h-[250px] sm:h-[361px]"
+                />
+              </div>
+              <div>
+                <h1
+                  class="xl:text-[28px] lg:text-2xl sm:text-xl text-lg font-semibold poppins my-3 text-[#333]"
+                >
+                  Christy The Reindeer
+                </h1>
+                <div class="flex flex-row justify-between items-center">
+                  <span
+                    class="xl:text-xl lg:text-lg sm:text-base text-sm font-normal poppins text-[#333]"
+                    >By Ryven</span
+                  >
+                  <div>
+                    <span
+                      class="xl:text-[28px] lg:text-2xl sm:text-xl text-lg font-semibold poppins text-[#0F0317]"
+                      >$199</span
+                    >
+                    <span
+                      class="text-[#0F0317] xl:text-xl lg:text-lg sm:text-base text-sm font-normal poppins line-through"
+                      >$250</span
+                    >
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-3" />
+                <div class="text-end">
+                  <button
+                    class="xl:text-2xl lg:text-xl sm:text-lg text-base xl:py-[18px] lg:py-[14px] sm:py-3 py-2 px-[26px] bg-[#941DDC] text-white rounded-[5px] font-normal poppins"
+                  >
+                    Buy now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt-10 flex flex-col sm:flex-row justify-between items-center gap-6 mb-[68px]"
+          >
+            <div class="flex flex-row items-center gap-3 text-[#8C91A2]">
+              <i class="fa-solid fa-check"></i>
+              <span>Jul 3, 2022 at 3:54 PM</span>
+            </div>
+            <button
+              class="text-base font-medium poppins text-white px-[60px] sm:py-3 py-2 rounded-[8px] bg-[#941DDC]"
+            >
+              Continue
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
