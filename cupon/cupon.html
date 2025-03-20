@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="max-w-[1920px] mx-auto flex">
+      <!-- Site bar -->
+      <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
+        <h1>Site bar</h1>
+      </div>
+
+      <!-- Main -->
+      <div class="w-full">
+        <div class=" h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
+          <h1>Header</h1>
+        </div>
+
+        <div class="px-4 w-full">
+          <!-- Product card header -->
+          <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+           <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+            <div class="flex flex-row items-center gap-2">
+                <h1 class="text-lg md:text-[23px] font-semibold poppins">Orders</h1>
+                <p class="text-[12px] font-normal poppins text-[#A946E7]">
+                  Total(12)
+                </p>
+              </div>
+
+              <div class="flex flex-row gap-2 border rounded-[50px] w-[335px] py-2 px-[14px]">
+                <i class="fa-solid fa-magnifying-glass text-lg text-[#D5A5F3]"></i>
+                <input type="text" placeholder="Search by product or customer details" class="w-full rounded-[50px] outline-none text-base font-normal poppins">
+              </div>
+           </div>
+          
+            <div class="flex flex-row justify-between sm:justify-end gap-4 mt-4 sm:mt-0">
+                <button
+                class="text-white bg-[#941DDC] py-2 px-4 md:px-8 flex flex-row items-center gap-4 rounded-[5px]"
+              >
+                <span class="text-[13px] font-semibold poppins"
+                  >Add new product</span
+                >
+                <i class="fa-solid fa-circle-plus text-lg md:text-2xl"></i>
+              </button>
+             
+            </div>
+          </div>
+
+          <!-- Product Card section -->
+          <div class="overflow-x-auto">
+            <div class="w-[1280px] xl:w-full">
+                <div class="grid grid-cols-8 w-full bg-[#F5E8FC] px-4 py-3 mt-4">
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">Coupon Name</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">Coupon Code</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">Discount</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">Start Date</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">End Date</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">Limit</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none ">User</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none text-center">Action</li>
+            </div>
+            
+            <div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+                <div class="grid grid-cols-8 w-full px-4 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-4 items-center text-sm font-medium poppins text-[#333333] list-none ">
+                            <span>Better Catastrophe</span>
+                        </li>
+                        <li class="flex gap-4 text-[#BE73ED] items-center text-sm font-semibold poppins list-none ">
+                            <span>NewYear25</span>
+                        </li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">$232</li>
+                        <li class="text-sm font-medium poppins text-[#333333] list-none ">2 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">8 Feb, 2025</li>
+                        <li class="text-[14px] font-medium poppins list-none ">25</li>
+                        <li class="text-[14px] font-medium poppins list-none ">00</li>
+                        <li class=" text-center text-2xl font-medium poppins text-[#333333] list-none ">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </li>
+                </div>
+            </div>
+            </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="flex flex-row sm:justify-center items-center w-full gap-5 mt-5 md:mt-10 mb-10 md:mb-[80px]">
+            <div class=" border border-[#858585] rounded-[3px] flex flex-row gap-1 items-center py-[1px] sm:py-[6px] px-2 sm:px-[14px]">
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                <span class="text-base font-medium poppins text-[#000000B2]">Preview</span>
+            </div>
+            <div class="flex flex-row gap-5">
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">1</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">2</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">3</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">4</span>
+            </div>
+           <div class=" border border-[#858585] rounded-[3px] flex flex-row gap-1 items-center py-[1px] sm:py-[6px] px-2 sm:px-[14px]">
+            <span class="text-base font-medium poppins text-[#000000B2]">Next</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
