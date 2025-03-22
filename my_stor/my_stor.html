@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="max-w-[1920px] mx-auto flex">
+      <!-- Site bar -->
+      <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
+        <h1>Site bar</h1>
+      </div>
+
+      <!-- Main -->
+      <div class="w-full">
+        <div class=" h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
+          <h1>Header</h1>
+        </div>
+
+        <div class="px-4 w-full">
+           <!-- Product Filter -->
+    <div class="">
+        <div class="grid lg:grid-cols-4 gap-5 w-full">
+          <div class="col-span-1 hidden lg:block border border-[#D5A5F3] rounded-[10px]">
+            <div class="flex flex-row justify-between bg-[#941DDC] text-white items-center py-4 px-6 rounded-tl-[10px] rounded-tr-[10px]">
+              <span class=" text-lg font-semibold poppins">Filters</span>
+              <span class="text-[12px] font-semibold poppins">Clear</span>
+            </div>
+  
+            <div class="p-5">
+               <h1 class="text-lg font-semibold poppins text-[#941DDC] ">Related Tags</h1>
+  
+               <div class="flex flex-col gap-2 mt-[10px]">
+                  <label for="digital" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="digital" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">Digital download</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">Png files</span>
+                  </label>
+                  <label for="Printable" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Printable" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">Printable</span>
+                  </label>
+                  <label for="Sublimation" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Sublimation" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">Sublimation design</span>
+                  </label>
+                  <label for="Vrchat" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Vrchat" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">Vrchat</span>
+                  </label>
+                  <label for="Template " class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Template " name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">Template </span>
+                  </label>
+               </div>
+
+
+               <h1 class="text-lg font-semibold poppins text-[#941DDC] mt-[50px]">Price Range</h1>
+
+               <div class="flex flex-row items-center justify-between gap-3 mt-[10px]">
+                  <input type="text" placeholder="$ Min" class="w-full border border-[#D5A5F3] rounded-[10px] py-3 px-4">
+                  <span class="text-lg font-semibold poppins text-[#941DDC]">To</span>
+                  <input type="text" placeholder="$ Max" class="w-full border border-[#D5A5F3] rounded-[10px] py-3 px-4">
+               </div>
+
+
+               <h1 class="text-lg font-semibold poppins text-[#941DDC] mt-[50px]">Rating</h1>
+  
+               <div class="flex flex-col gap-2 mt-[10px]">
+                  <label for="digital" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="digital" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">All</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">1 star and above</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">2 star and above</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">3 star and above</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">4 star and above</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">5 star and above</span>
+                  </label>
+               </div>
+
+               <h1 class="text-lg font-semibold poppins text-[#941DDC] mt-[50px]">Date Updated</h1>
+  
+               <div class="flex flex-col gap-2 mt-[10px]">
+                  <label for="digital" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="digital" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">In the any date</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">In the last year</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">In the last month</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">In the last week</span>
+                  </label>
+                  <label for="Png" class="text-[12px] font-normal poppins flex flex-row items-center cursor-pointer select-none gap-1">
+                   <input type="radio" id="Png" name="tag" class="text-[#00204B] w-[14px] h-[14px]">
+                   <span class="text-lg font-normal poppins text-[#00000080]">In the last day</span>
+                  </label>
+               </div>
+            </div>
+          </div>
+
+             <!-- Related Products -->
+          <div class="col-span-3">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3  gap-5">
+              <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+                <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+                <h1 class="text-base font-semibold poppins my-4">
+                  Sword Fighting: Applying God's word to win the battle.
+                </h1>
+    
+                <div class="flex flex-row justify-between">
+                  <span class="text-[12px] font-normal poppins">By Ryven</span>
+                  <div class="flex flex-row items-center gap-2">
+                    <span class="text-[16px] font-semibold poppins">$250</span>
+                    <span class="text-[12px] font-normal poppins">$300</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-4"/>
+    
+                <div class="flex flex-row justify-between items-center">
+                  <div>
+                    <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                    <div class="flex flex-row items-center gap-[6px]">
+                      <i
+                        class="fa-solid fa-star text-base text-[#F8B84E]"
+                      ></i>
+                      <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                    </div>
+                  </div>
+    
+                  <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+                </div>
+              </div>
+              <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+                <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+                <h1 class="text-base font-semibold poppins my-4">
+                  Sword Fighting: Applying God's word to win the battle.
+                </h1>
+    
+                <div class="flex flex-row justify-between">
+                  <span class="text-[12px] font-normal poppins">By Ryven</span>
+                  <div class="flex flex-row items-center gap-2">
+                    <span class="text-[16px] font-semibold poppins">$250</span>
+                    <span class="text-[12px] font-normal poppins">$300</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-4"/>
+    
+                <div class="flex flex-row justify-between items-center">
+                  <div>
+                    <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                    <div class="flex flex-row items-center gap-[6px]">
+                      <i
+                        class="fa-solid fa-star text-base text-[#F8B84E]"
+                      ></i>
+                      <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                    </div>
+                  </div>
+    
+                  <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+                </div>
+              </div>
+              <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+                <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+                <h1 class="text-base font-semibold poppins my-4">
+                  Sword Fighting: Applying God's word to win the battle.
+                </h1>
+    
+                <div class="flex flex-row justify-between">
+                  <span class="text-[12px] font-normal poppins">By Ryven</span>
+                  <div class="flex flex-row items-center gap-2">
+                    <span class="text-[16px] font-semibold poppins">$250</span>
+                    <span class="text-[12px] font-normal poppins">$300</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-4"/>
+    
+                <div class="flex flex-row justify-between items-center">
+                  <div>
+                    <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                    <div class="flex flex-row items-center gap-[6px]">
+                      <i
+                        class="fa-solid fa-star text-base text-[#F8B84E]"
+                      ></i>
+                      <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                    </div>
+                  </div>
+    
+                  <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+                </div>
+              </div>
+              <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+                <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+                <h1 class="text-base font-semibold poppins my-4">
+                  Sword Fighting: Applying God's word to win the battle.
+                </h1>
+    
+                <div class="flex flex-row justify-between">
+                  <span class="text-[12px] font-normal poppins">By Ryven</span>
+                  <div class="flex flex-row items-center gap-2">
+                    <span class="text-[16px] font-semibold poppins">$250</span>
+                    <span class="text-[12px] font-normal poppins">$300</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-4"/>
+    
+                <div class="flex flex-row justify-between items-center">
+                  <div>
+                    <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                    <div class="flex flex-row items-center gap-[6px]">
+                      <i
+                        class="fa-solid fa-star text-base text-[#F8B84E]"
+                      ></i>
+                      <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                    </div>
+                  </div>
+    
+                  <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+                </div>
+              </div>
+              <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+                <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+                <h1 class="text-base font-semibold poppins my-4">
+                  Sword Fighting: Applying God's word to win the battle.
+                </h1>
+    
+                <div class="flex flex-row justify-between">
+                  <span class="text-[12px] font-normal poppins">By Ryven</span>
+                  <div class="flex flex-row items-center gap-2">
+                    <span class="text-[16px] font-semibold poppins">$250</span>
+                    <span class="text-[12px] font-normal poppins">$300</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-4"/>
+    
+                <div class="flex flex-row justify-between items-center">
+                  <div>
+                    <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                    <div class="flex flex-row items-center gap-[6px]">
+                      <i
+                        class="fa-solid fa-star text-base text-[#F8B84E]"
+                      ></i>
+                      <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                    </div>
+                  </div>
+    
+                  <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+                </div>
+              </div>
+              <div class="border border-[#D5A5F3] rounded-[10px] p-4">
+                <img src="../image (1).png" alt="img" class="w-full h-[200px]" />
+                <h1 class="text-base font-semibold poppins my-4">
+                  Sword Fighting: Applying God's word to win the battle.
+                </h1>
+    
+                <div class="flex flex-row justify-between">
+                  <span class="text-[12px] font-normal poppins">By Ryven</span>
+                  <div class="flex flex-row items-center gap-2">
+                    <span class="text-[16px] font-semibold poppins">$250</span>
+                    <span class="text-[12px] font-normal poppins">$300</span>
+                  </div>
+                </div>
+                <hr class="border border-[#EAD2F9] my-4"/>
+    
+                <div class="flex flex-row justify-between items-center">
+                  <div>
+                    <span class="text-[12px] font-normal poppins mb-2">200+ Sales</span>
+                    <div class="flex flex-row items-center gap-[6px]">
+                      <i
+                        class="fa-solid fa-star text-base text-[#F8B84E]"
+                      ></i>
+                      <span class="text-[12px] font-medium poppins">5.0 (44)</span>
+                    </div>
+                  </div>
+    
+                  <button class="border py-2 px-4 text-white bg-[#941DDC] rounded-[5px] font-normal text-[14px] poppins">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+          <!-- Pagination -->
+          <div class="flex flex-row sm:justify-center items-center w-full gap-5 mt-5 md:mt-10 mb-10 md:mb-[80px]">
+            <div class=" border border-[#858585] rounded-[3px] flex flex-row gap-1 items-center py-[1px] sm:py-[6px] px-2 sm:px-[14px]">
+                <i class="fa-solid fa-arrow-left text-[10px]"></i>
+                <span class="text-base font-medium poppins text-[#000000B2]">Preview</span>
+            </div>
+            <div class="flex flex-row gap-5">
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">1</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">2</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">3</span>
+                <span class="py2 sm:py-[6px] px-1.5 sm:px-5 border border-[#858585] rounded-[3px]">4</span>
+            </div>
+           <div class=" border border-[#858585] rounded-[3px] flex flex-row gap-1 items-center py-[1px] sm:py-[6px] px-2 sm:px-[14px]">
+            <span class="text-base font-medium poppins text-[#000000B2]">Next</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
