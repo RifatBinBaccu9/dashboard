@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cnfig -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="max-w-[1920px] mx-auto flex">
+      <!-- Site bar -->
+      <div class="hidden 2xl:block w-[320px] h-[1292px] bg-amber-400">
+        <h1>Site bar</h1>
+      </div>
+
+      <!-- Main -->
+      <div class="w-full">
+        <div class=" h-[74px] w-full bg-green-400 mt-8 mb-[56px]">
+          <h1>Header</h1>
+        </div>
+
+        <div class="px-4 w-full">
+         <div class="flex flex-row items-center justify-between">
+            <h1 class="text-[23px] font-medium poppins text-[#333333]">Earning Details</h1>
+            <button class="text-white bg-[#941DDC] py-2 px-4 md:px-8 flex flex-row items-center gap-4 rounded-[5px] text-sm font-semibold poppins">Add New Product</button>
+         </div>
+
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-7">
+            <div class="flex flex-row justify-between bg-[#731DDC] py-4 px-8 rounded-lg text-white">
+                <div >
+                   <div class="border border-[#F5E8FC] p-[10px] rounded-xl bg-[#F5E8FC] inline-block">
+                    <img src="../card1.png" alt="" class="w-6 h-6">
+                   </div>
+                    <h1 class="text-xl font-semibold poppins mt-2 mb-1">Total Payouts</h1>
+                    <p class="text-3xl font-semibold poppins">$110.13</p>
+                </div>
+                <div>
+                  <select name="" id="" class="py-2 px-2 sm:px-3 text-black bg-[#F5E8FC] text-sm font-normal poppins border border-[#E7E7E7] rounded-[10px] mt-2 w-full">
+                    <option value="">This Week</option>
+                    <option value="">Last 30 days</option>
+                    <option value="">Last 90 days</option>
+                  </select>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between bg-[#941DDC] py-4 px-8 rounded-lg text-white">
+                <div >
+                   <div class="border border-[#F5E8FC] p-[10px] rounded-xl bg-[#F5E8FC] inline-block">
+                    <img src="../card2.png" alt="" class="w-6 h-6">
+                   </div>
+                    <h1 class="text-xl font-semibold poppins mt-2 mb-1">Earnings This Year</h1>
+                    <p class="text-3xl font-semibold poppins">$1,840.00</p>
+                </div>
+                <div>
+                  <select name="" id="" class="py-2 px-2 sm:px-3 text-black bg-[#F5E8FC] text-sm font-normal poppins border border-[#E7E7E7] rounded-[10px] mt-2 w-full">
+                    <option value="">This Year</option>
+                    <option value="">Last 30 days</option>
+                    <option value="">Last 90 days</option>
+                  </select>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between bg-[#BE73ED] py-4 px-8 rounded-lg text-white">
+                <div >
+                   <div class="border border-[#F5E8FC] p-[10px] rounded-xl bg-[#F5E8FC] inline-block">
+                    <img src="../card3.png" alt="" class="w-6 h-6">
+                   </div>
+                    <h1 class="text-xl font-semibold poppins mt-2 mb-1">Lifetime Earnings</h1>
+                    <p class="text-3xl font-semibold poppins">$4,680.80</p>
+                </div>
+                <div>
+                  <select name="" id="" class="py-2 px-2 sm:px-3 text-black bg-[#F5E8FC] text-sm font-normal poppins border border-[#E7E7E7] rounded-[10px] mt-2 w-full">
+                    <option value="">Lifetime</option>
+                    <option value="">Last 30 days</option>
+                    <option value="">Last 90 days</option>
+                  </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-7 gap-4">
+            <div class="col-span-5 flex flex-row items-center justify-between mt-8 mb-4">
+                <h1 class="text-xl font-medium poppins text-[#333333]">Affiliate Sales</h1>
+                <p class="text-sm font-normal poppins text-[#BE73ED]">See All</p>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-7 gap-4">
+           <!-- Product Card section -->
+           <div class="col-span-5 overflow-x-auto">
+            <div class="w-[1280px] xl:w-full">
+                <div class="grid grid-cols-5 gap-8 w-full bg-[#F5E8FC] px-6 md:px-[84px] py-3 mt-4">
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none col-span-2 flex flex-row gap-6 ">
+                        Product Tittle
+                    </li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none col-span-2">Commissions Earned</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">Date</li>
+                    </div>
+            
+            <div>
+                <div class="grid grid-cols-5 gap-8 w-full px-6 md:px-[84px]  py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-6  items-center text-sm font-medium poppins text-[#333333] list-none col-span-2">
+                            <img src="../book.png" alt="book" class="w-10 h-10 rounded-full">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus error fugiat saepe beatae cupiditate, iure provident eveniet veritatis deserunt qui suscipit et accusamus explicabo atque! Molestiae tempore minus eaque labore?</span>
+                                    <span class="text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">John Smith </span>
+                                </div>
+                            
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none col-span-2">$100</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">2 May, 2025</li>
+                 </div>
+                <div class="grid grid-cols-5 gap-8 w-full px-6 md:px-[84px]  py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-6  items-center text-sm font-medium poppins text-[#333333] list-none col-span-2">
+                            <img src="../book.png" alt="book" class="w-10 h-10 rounded-full">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus error fugiat saepe beatae cupiditate, iure provident eveniet veritatis deserunt qui suscipit et accusamus explicabo atque! Molestiae tempore minus eaque labore?</span>
+                                    <span class="text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">John Smith </span>
+                                </div>
+                            
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none col-span-2">$100</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">2 May, 2025</li>
+                 </div>
+                <div class="grid grid-cols-5 gap-8 w-full px-6 md:px-[84px]  py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-6  items-center text-sm font-medium poppins text-[#333333] list-none col-span-2">
+                            <img src="../book.png" alt="book" class="w-10 h-10 rounded-full">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus error fugiat saepe beatae cupiditate, iure provident eveniet veritatis deserunt qui suscipit et accusamus explicabo atque! Molestiae tempore minus eaque labore?</span>
+                                    <span class="text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">John Smith </span>
+                                </div>
+                            
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none col-span-2">$100</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">2 May, 2025</li>
+                 </div>
+                <div class="grid grid-cols-5 gap-8 w-full px-6 md:px-[84px]  py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-6  items-center text-sm font-medium poppins text-[#333333] list-none col-span-2">
+                            <img src="../book.png" alt="book" class="w-10 h-10 rounded-full">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus error fugiat saepe beatae cupiditate, iure provident eveniet veritatis deserunt qui suscipit et accusamus explicabo atque! Molestiae tempore minus eaque labore?</span>
+                                    <span class="text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">John Smith </span>
+                                </div>
+                            
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none col-span-2">$100</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">2 May, 2025</li>
+                 </div>
+            </div>
+            </div>
+          </div>
+
+
+          <div class="col-span-2 h-fit px-7 py-4 border border-[#941DDC] rounded-2xl mt-4">
+          <div class="flex flex-row justify-between">
+            <h1 class="w-[135px] text-2xl font-semibold poppins">Earnings Breakdown</h1>
+            <div>
+                <select name="" id="" class="py-2 px-2 sm:px-3 text-black bg-[#F5E8FC] text-sm font-normal poppins border border-[#E7E7E7] rounded-[10px] mt-2 w-full">
+                  <option value="">Lifetime</option>
+                  <option value="">Last 30 days</option>
+                  <option value="">Last 90 days</option>
+                </select>
+              </div>
+          </div>
+
+          <div class="my-10">
+            <!-- graph -->
+          </div>
+
+          <div class="flex flex-col gap-2 w-[190px] mx-auto">
+            <li class="text-base font-semibold poppins text-[#BE73ED]"><span class=" text-[#050708]">My Products: 43%</span></li>
+            <li class="text-base font-semibold poppins text-[#EAD2F9]"><span class=" text-[#050708]">Affiliate Products: 57%</span></li>
+          </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="mt-8">
+            <h1 class="text-2xl font-medium poppins">Recommendations & Opportunities</h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
+                <div class="flex flex-row gap-4 p-4 border border-[#941DDC] rounded-[8px]">
+                    <div class="hidden sm:block">
+                        <img src="../book.png" alt="book" class="max-w-[184px] h-full">
+                    </div>
+                    <div class="w-full">
+                        <h1>I Want a c Catastroph...</h1>
+
+                        <div class="grid grid-cols-2 2xl:grid-cols-4 justify-between gap-4 my-2 w-full">
+                            <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-star text-[11px] text-amber-400"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1950</span
+                                >
+                              </div>
+                            <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-eye text-[11px]"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1950</span
+                                >
+                              </div>
+                              <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1.2K</span
+                                >
+                              </div>
+                              <div class="flex flex-row  justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >84 Sales</span
+                                >
+                              </div>
+                        </div>
+
+                        <div class="flex flex-col 2xl:flex-row justify-between w-full items-center bg-[#F5E8FC] px-3 py-2 rounded-[8px]">
+                            <h1 class="text-[11px] font-normal poppins text-[#333333] 2xl:border-r border-[#941DDC] pr-0 2xl:pr-4">10% Commission 
+                                share</h1>
+                                <p class="text-2xl font-medium poppins text-[#941DDC]">$200.00</p>
+                        </div>
+
+                        <div>
+                            <button class="py-2 px-4 mt-2 rounded-[5px] text-white bg-[#941DDC] text-sm font-semibold poppins">Add To Affiliate </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-4 p-4 border border-[#941DDC] rounded-[8px]">
+                    <div class="hidden sm:block">
+                        <img src="../book.png" alt="book" class="max-w-[184px] h-full">
+                    </div>
+                    <div class="w-full">
+                        <h1>I Want a c Catastroph...</h1>
+
+                        <div class="grid grid-cols-2 2xl:grid-cols-4 justify-between gap-4 my-2 w-full">
+                            <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-star text-[11px] text-amber-400"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1950</span
+                                >
+                              </div>
+                            <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-eye text-[11px]"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1950</span
+                                >
+                              </div>
+                              <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1.2K</span
+                                >
+                              </div>
+                              <div class="flex flex-row  justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >84 Sales</span
+                                >
+                              </div>
+                        </div>
+
+                        <div class="flex flex-col 2xl:flex-row justify-between w-full items-center bg-[#F5E8FC] px-3 py-2 rounded-[8px]">
+                            <h1 class="text-[11px] font-normal poppins text-[#333333] 2xl:border-r border-[#941DDC] pr-0 2xl:pr-4">10% Commission 
+                                share</h1>
+                                <p class="text-2xl font-medium poppins text-[#941DDC]">$200.00</p>
+                        </div>
+
+                        <div>
+                            <button class="py-2 px-4 mt-2 rounded-[5px] text-white bg-[#941DDC] text-sm font-semibold poppins">Add To Affiliate </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row gap-4 p-4 border border-[#941DDC] rounded-[8px]">
+                    <div class="hidden sm:block">
+                        <img src="../book.png" alt="book" class="max-w-[184px] h-full">
+                    </div>
+                    <div class="w-full">
+                        <h1>I Want a c Catastroph...</h1>
+
+                        <div class="grid grid-cols-2 2xl:grid-cols-4 justify-between gap-4 my-2 w-full">
+                            <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-star text-[11px] text-amber-400"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1950</span
+                                >
+                              </div>
+                            <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-eye text-[11px]"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1950</span
+                                >
+                              </div>
+                              <div class="flex flex-row justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <i class="fa-solid fa-arrow-pointer text-[11px]"></i>
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >1.2K</span
+                                >
+                              </div>
+                              <div class="flex flex-row  justify-center items-center gap-[2px] bg-[#F6F6F6] rounded-[6px] py-1 px-2">
+                                <span class="text-[13px] font-medium poppins text-[#333333]"
+                                  >84 Sales</span
+                                >
+                              </div>
+                        </div>
+
+                        <div class="flex flex-col 2xl:flex-row justify-between w-full items-center bg-[#F5E8FC] px-3 py-2 rounded-[8px]">
+                            <h1 class="text-[11px] font-normal poppins text-[#333333] 2xl:border-r border-[#941DDC] pr-0 2xl:pr-4">10% Commission 
+                                share</h1>
+                                <p class="text-2xl font-medium poppins text-[#941DDC]">$200.00</p>
+                        </div>
+
+                        <div>
+                            <button class="py-2 px-4 mt-2 rounded-[5px] text-white bg-[#941DDC] text-sm font-semibold poppins">Add To Affiliate </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="mt-6">
+          <h1 class="text-2xl font-medium poppins">Recommendations & Opportunities</h1>
+
+          <div class="col-span-5 overflow-x-auto">
+            <div class="w-[1280px] xl:w-full">
+                <div class="grid grid-cols-9 gap-6 w-full bg-[#F5E8FC] px-8 py-3 mt-4">
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none col-span-3">Product</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">Impressions</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">Clicks</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">Sales</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">Impressions</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">CTR</li>
+                    <li class="text-sm font-semibold poppins text-[#BE73ED] list-none">Sales CR</li>
+                    </div>
+            
+            <div>
+                <div class="grid grid-cols-9 gap-6 w-full px-8 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-2  items-center text-sm font-medium poppins text-[#333333] list-none col-span-3">
+                            <img src="../book.png" alt="book" class="w-[50px] h-[50px] rounded-sm">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">I Want a Better Catastrophe</span>
+                                    <span class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">
+                                        <span>https://www.google.com</span>
+                                        <i class="fa-solid fa-copy text-[8px]"></i>
+                                     </span>
+                                </div>
+                            
+                        </li>
+                        <li class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none ">
+                            <span>10,012</span>
+                            <i class="fa-regular fa-eye text-[10px]"></i>
+                        </li>
+                        <li class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none ">
+                            <span>1,000</span>
+                            <i class="fa-solid fa-arrow-pointer text-[10px]"></i>
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">120($100)</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">1200</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">12%</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">60%</li>
+                 </div>
+                <div class="grid grid-cols-9 gap-6 w-full px-8 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-2  items-center text-sm font-medium poppins text-[#333333] list-none col-span-3">
+                            <img src="../book.png" alt="book" class="w-[50px] h-[50px] rounded-sm">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">I Want a Better Catastrophe</span>
+                                    <span class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">
+                                        <span>https://www.google.com</span>
+                                        <i class="fa-solid fa-copy text-[8px]"></i>
+                                     </span>
+                                </div>
+                            
+                        </li>
+                        <li class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none ">
+                            <span>10,012</span>
+                            <i class="fa-regular fa-eye text-[10px]"></i>
+                        </li>
+                        <li class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none ">
+                            <span>1,000</span>
+                            <i class="fa-solid fa-arrow-pointer text-[10px]"></i>
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">120($100)</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">1200</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">12%</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">60%</li>
+                 </div>
+                <div class="grid grid-cols-9 gap-6 w-full px-8 py-3 items-center border border-[#E9E9E9]">
+                        <li class="flex flex-row gap-2  items-center text-sm font-medium poppins text-[#333333] list-none col-span-3">
+                            <img src="../book.png" alt="book" class="w-[50px] h-[50px] rounded-sm">
+                            
+                                <div class="flex flex-col gap-1">
+                                    <span class="text-sm font-semibold poppins text-[#333333] list-none mb-1 ml-1 line-clamp-1">I Want a Better Catastrophe</span>
+                                    <span class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none mb-1 ml-1">
+                                        <span>https://www.google.com</span>
+                                        <i class="fa-solid fa-copy text-[8px]"></i>
+                                     </span>
+                                </div>
+                            
+                        </li>
+                        <li class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none ">
+                            <span>10,012</span>
+                            <i class="fa-regular fa-eye text-[10px]"></i>
+                        </li>
+                        <li class="flex flex-row gap-2 items-center text-sm font-normal poppins text-[#333333] list-none ">
+                            <span>1,000</span>
+                            <i class="fa-solid fa-arrow-pointer text-[10px]"></i>
+                        </li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">120($100)</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">1200</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">12%</li>
+                        <li class="text-sm font-normal poppins text-[#333333] list-none ">60%</li>
+                 </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
