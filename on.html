@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Rate Chart</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            const ctx = document.getElementById("conversionChart").getContext("2d");
+
+            new Chart(ctx, {
+                type: "doughnut",
+                data: {
+                    labels: ["Total clicks", "Total purchases"],
+                    datasets: [{
+                        data: [50, 50], // Adjust values accordingly
+                        backgroundColor: ["#FFB74D", "#8E5BE0"], // Colors matching the image
+                        borderWidth: 0,
+                    }]
+                },
+                options: {
+                    cutout: "70%",
+                    plugins: {
+                        legend: { display: false },
+                        datalabels: {
+                            color: "#111",
+                            font: { weight: "bold", size: 24 },
+                            formatter: function (value, context) {
+                                return context.dataIndex === 0 ? "50%" : "";
+                            },
+                        },
+                    }
+                },
+                plugins: [ChartDataLabels]
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white shadow-lg rounded-lg p-6 w-80 text-center border border-purple-200">
+        <h2 class="text-lg font-semibold text-gray-900">Conversion Rate</h2>
+        <div class="relative w-40 h-40 mx-auto mt-4">
+            <canvas id="conversionChart"></canvas>
+            <div class="absolute inset-0 flex items-center justify-center">
+                <span class="text-2xl font-bold text-gray-900">50%</span>
+            </div>
+        </div>
+        <div class="mt-4 flex justify-center gap-4 text-sm">
+            <div class="flex items-center">
+                <span class="w-3 h-3 bg-orange-400 rounded-full mr-2"></span>
+                Total clicks
+            </div>
+            <div class="flex items-center">
+                <span class="w-3 h-3 bg-purple-500 rounded-full mr-2"></span>
+                Total purchases
+            </div>
+        </div>
+    </div>
+</body>
+</html>
